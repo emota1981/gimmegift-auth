@@ -1,16 +1,8 @@
-# Compiled class file
+# === Java & Maven ===
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+target/
+build/
+out/
 *.jar
 *.war
 *.nar
@@ -18,7 +10,103 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+*.ctxt
+.mtj.tmp/
+
+# === Maven Wrapper ===
+!**/src/main/**/target/
+!**/src/test/**/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+*.ipr
+.shelf/
+out/
+
+# === Eclipse / VSCode (just in case) ===
+.classpath
+.project
+.settings/
+.factorypath
+.vscode/
+.metadata/
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# === Linux ===
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Logs ===
+*.log
+logs/
+spring.log
+
+# === Spring Boot Local Overrides ===
+application-local.yml
+application-local.yaml
+application-local.properties
+application-secrets.yml
+.env
+.env.local
+
+# === Database & Storage ===
+*.h2.db
+*.db
+*.sqlite
+*.sqlite3
+data/
+firestore-data/
+firestore-debug.log
+firestore-export/
+
+# === GCP Credentials (NEVER commit) ===
+*-service-account.json
+*-credentials.json
+gcp-key*.json
+service-account-*.json
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.config/gcloud/
+
+# === Test Reports & Coverage ===
+target/site/jacoco/
+.scannerwork/
+coverage/
+*.lcov
+
+# === AI Agent Local State (not versioned) ===
+# Junie writes runtime memory, plans, and cache here. Each developer has their own.
+# Versioned subpaths: .junie/guidelines.md and .junie/skills/ (added in later phases).
+.junie/memory/
+.junie/plans/
+.junie/cache/
+.claude/cache/
+.aider*
+.cursor*
+
+# === OS / Editor Temp ===
+*.swp
+*.swo
+*~
+.idea_modules/
